@@ -1,11 +1,15 @@
 # Corda Deployment and Configuration Helper Scripts
-Base helper scripts and guides to ease corda deployment, development and node configrations with **Corda V2**
+Base helper scripts and guides to ease corda deployment, development and node configrations with **Corda**
+
+Tested on **Corda V2**
 
 
 
 ### All these scripts and guides were tested on a live **Corda network deployed on Azure**.
 
 You can deploye your on Corda network on Azure in minutes from [here.](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/corda.r3corda?tab=Overview)
+
+
 
 ### All this scripts/guides have been created for and under supervision of:
 
