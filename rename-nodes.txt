@@ -1,0 +1,32 @@
+Rename deployed Corda nodes legal Name 
+=======================================
+
+1. SSH into each node individually including 'network map node' and 'notary node' and run following commands on each node to stop corda servers:
+
+sudo systemctl stop corda
+sudo systemctl stop corda-webserver
+
+
+2. Edit /opt/corda/node.conf using vim as required in each node. (Remember: If you change name of 'network map node' do not forget to change it in all respective nodes on network)
+
+i.e: myLegalName : "O=MY_ORG_NAME, L=Helsinki, C=FI"
+
+
+3. Delete persistence using following command:
+
+rm /opt/corda/persistence.mv.db
+
+
+4. Delete following certificates:
+
+rm /opt/corda/certificates/nodekeystore.jks
+rm /opt/corda/certificates/sslkeystore.jks
+
+
+5. Start corda on all nodes using following commands:
+*I started 'network map node' first and then all others.
+
+sudo systemctl start corda
+sudo systemctl start corda-webserver
+
+

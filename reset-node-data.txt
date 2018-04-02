@@ -1,0 +1,5 @@
+# SSH into your node and run following shell commands to reset all data on Corda Node
+
+rm /opt/corda/persistence.mv.db
+sudo systemctl restart corda
+sudo systemctl restart corda-webserver
