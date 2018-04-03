@@ -1,0 +1,9 @@
+1. Clone: https://github.com/roger3cev/yo-cordapp/tree/release-V2
+
+2. Open it in intellijIDEA and compile an run to see if project works fine.
+
+3. Open terminal navigate to your app folder using 'cd YOUR_APP_MAIN_FOLDER_PATH' command.
+
+4. And build jar using: ./gradlew jar
+
+5. jar will be located in YOUR_APP_MAIN_FOLDER/kotlin-source/build/libs/
